@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Authors</title>
+</head>
+<body onload="getauthors()">
+  <header class="header">
+    <div class="title">
+      <a href="#">
+        <h2>Library Manager</h2>
+      </a>
+    </div>
+    <div class="navigation">
+      <input type="checkbox" class="toggle-menu" />
+      <div class="hamburger"></div>
+      <ul class="menu">
+        <li><a href="/index.html" >Books</a></li>
+        <li><a href="/Authors.html">Authors</a></li>
+        <li><a href="/Publishers.html">Publishers</a></li>
+      </ul>
+    </div>
+  </header>
+    <section id="authors-list">
+    
+      <h3>List of Authors</h3>
+   
+        <table id="author-table">
+          <thead>
+            <th>Sr no.</th>
+            <th>Author</th>
+            <th>Books</th>
+            <th>No. of Books</th>
+            <th>Action</th>
+          
+          </thead>
+          <tbody id="authorTable-rows">
+    
+          </tbody>
+        </table>
+       </section>
+       <script src="./index.js"></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Books</title>
+  </head>
+  <body onload="selectData()">
+    <header class="header">
+      <div class="title">
+        <a href="#">
+          <h2>Library Manager</h2>
+        </a>
+      </div>
+      <div class="navigation">
+        <input type="checkbox" class="toggle-menu" />
+        <div class="hamburger"></div>
+        <ul class="menu">
+          <li><a href="/index.html">Books</a></li>
+          <li><a href="/Authors.html">Authors</a></li>
+          <li><a href="/Publishers.html">Publishers</a></li>
+        </ul>
+      </div>
+    </header>
+    <div class="row">
+      <section id="add-book" class="column1">
+        <form action="#" id="form">
+          <h3>Add New Book</h3>
+          <input
+            type="text"
+            name=""
+            id="book"
+            name="book"
+            placeholder="Book Name"
+          />
+          <input
+            type="text"
+            name=""
+            id="author"
+            name="author"
+            placeholder="Author Name"
+          />
+          <input
+            type="text"
+            name=""
+            id="publisher"
+            name="publisher"
+            placeholder="Publisher Name"
+          />
+          <input
+            type="date"
+            name=""
+            id="date"
+            name="date"
+            placeholder="Publication Date"
+          />
+          <button
+            type="button"
+            value="Submit"
+            id="submit"
+            class="submit-btn"
+            onclick="manageData()"
+          >
+            Submit
+          </button>
+          <button
+            type="reset"
+            value="reset"
+            class="reset-btn"
+            onclick="resetClicked()"
+          >
+            Reset
+          </button>
+         
+        </form>
+      </section>
+      
+
+      <section id="books-list" class="column2">
+        <h3>List of Books</h3>
+        <table id="data-table">
+          <thead>
+            <th>Sr. no.</th>
+            <th>Book Name</th>
+            <th>Author</th>
+            <th>Publisher</th>
+            <th>Publication Date</th>
+            <th>Action</th>
+          </thead>
+          <tbody id="table-rows"></tbody>
+        </table>
+      </section>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
